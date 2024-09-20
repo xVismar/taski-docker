@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['123.123.123.123', '89.169.175.171', 'blackcloudishere.ddns.net', 'localhost', '127.0.0.1', 'backend:8000', 'localhost:8000']
+ALLOWED_HOSTS = ['172.18.0.1', '89.169.175.171', 'blackcloudishere.ddns.net', 'localhost', '127.0.0.1', 'backend:8000', 'localhost:8000']
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
