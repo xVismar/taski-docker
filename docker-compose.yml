@@ -37,6 +37,5 @@ services:
     ports:
       - 8000:80
     depends_on:
-      - db
       - frontend
       - backend
