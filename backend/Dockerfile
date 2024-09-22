@@ -9,4 +9,4 @@ COPY . /app
 WORKDIR /app
 
 
-ENTRYPOINT ["sh", "/app/entrypoint.sh"]
+CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]
