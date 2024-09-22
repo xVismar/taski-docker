@@ -1,4 +1,4 @@
-name: taski-docker
+version: '3'
 
 volumes:
   pg_data_production:
