@@ -5,8 +5,8 @@ on:
     branches:
       - main
 
-  jobs:
-    tests:
+jobs:
+  tests:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -50,7 +50,7 @@ on:
           cd backend/
           python manage.py test
 
-    build_and_push_to_docker_hub:
+  build_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
     runs-on: ubuntu-latest
     needs: tests
@@ -74,8 +74,7 @@ on:
           push: true
           tags: vismar/taski_backend:latest
 
-
-    frontend_tests:
+  frontend_tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -118,8 +117,6 @@ on:
           context: ./frontend/
           push: true
           tags: vismar/taski_frontend:latest
-
-
 
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
